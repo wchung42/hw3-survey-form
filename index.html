@@ -5,25 +5,54 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id = "title">The Survey About Nothing</h1>
-    <p id = "description">Tell us what you think about our amazing app</p>
+    <h1 id = "title">The Randomness Survery</h1>
+    <p id = "description">Tell us about you</p>
     <form id= "survey-form" action = "https://google.com">
         <label id = "name-label">Name: </label><br>
         <input type = "text" name = "name" id = "name" required placeholder = "Enter your name"> <br>
         <label id = "email-label">Email: </label><br>
         <input type = "email" name = "email" id = "email" required placeholder = "Enter your email"> <br>
         <label id = "number-label">Age: </label><br>
-        <input type = "number" name = "age" id = "number" min = "1" max = "100" required placeholder = "Enter your age"> <br>
+        <input type = "number" name = "age" id = "number" min = "1" max = "1000" required placeholder = "Enter your age"> <br><br>
         
-        <label id = "rec-label">How did you hear about this amazing app?</label><br>
+        <!-- radio -->
+        <label id = "pick">Pick a number: </label><br>
+        <input type = "radio" name = "num" value = "3" checked> 3
+        <input type = "radio" name = "num" value = "7" > 7
+        <input type = "radio" name = "num" value = "13" > 13
+        <input type = "radio" name = "num" value = "42" > 42
+        <input type = "radio" name = "num" value = "infinity" > Infinity<br><br>
+
+        <label id = "rec">On a scale of 0 to "Greatest survey ever", how likely would you recommend this?</label><br>
+        <input type = "radio" name = "recommendation" value = "zero" checked> 0
+        <input type = "radio" name = "recommendation" value = "dont-even-bother" > Don't even bother
+        <input type = "radio" name = "recommendation" value = "hmmmmmmm" > Hmmmmmmm
+        <input type = "radio" name = "recommendation" value = "just-aight" > just-aight
+        <input type = "radio" name = "recommendation" value = "pretty-good" > Pretty good
+        <input type = "radio" name = "recommendation" value = "greatest-survey-ever" > Greatest survey ever <br><br>
+
+        <!-- dropdown menu -->
+        <label id = "rec-label">How did you hear about this amazing survey?</label><br>
         <select name = "userRec" id = "dropdown">
+            <option disabled selected value>Select an option</option>
             <option value = "email">Email</option>
             <option value = "friend">Friend</option>
             <option value = "teacher">Teacher</option>
             <option value = "reddit">reddit</option>
             <option value = "tv">TV commercial</option>
         </select>
-        <br>
+        <br><br>
+
+        <!-- checkbox -->
+        <label id = "options">What should I add to the survey?</label><br>
+        <input type = "checkbox" name = "feature1" value = "Pizza"> Pizza delivery service <br>
+        <input type = "checkbox" name = "feature1" value = "Questions"> More random questions <br>
+        <input type = "checkbox" name = "feature1" value = "Quit"> A quit button <br>
+        <input type = "checkbox" name = "feature1" value = "Nothing"> Absolutely nothing because it's perfect <br><br>
+
+        <!-- textarea -->
+        <label id = "feedback">Complaints, thoughts, suggestions?</label><br>
+        <textarea id = "suggestions" style = "height: 75px; resize:vertical;" name = "suggestions" placeholder = "Gives us feedback plz"></textarea>
 
         <input type = "submit" id = "submit" text = "Submit">
     </form>
