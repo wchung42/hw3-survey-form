@@ -8,12 +8,23 @@
     <h1 id = "title">The Survey About Nothing</h1>
     <p id = "description">Tell us what you think about our amazing app</p>
     <form id= "survey-form" action = "https://google.com">
-        <label id = "name-label">Name: </label>
+        <label id = "name-label">Name: </label><br>
         <input type = "text" name = "name" id = "name" required placeholder = "Enter your name"> <br>
-        <label id = "email-label">Email: </label> 
-        <input type = "text" name = "email" id = "email" required placeholder = "Enter your email"> <br>
-        <label id = "number-label">Age: </label>
-        <input type = "text" name = "age" id = "number" required placeholder = "Enter your age"> <br>
+        <label id = "email-label">Email: </label><br>
+        <input type = "email" name = "email" id = "email" required placeholder = "Enter your email"> <br>
+        <label id = "number-label">Age: </label><br>
+        <input type = "number" name = "age" id = "number" min = "1" max = "100" required placeholder = "Enter your age"> <br>
+        
+        <label id = "rec-label">How did you hear about this amazing app?</label><br>
+        <select name = "userRec" id = "dropdown">
+            <option value = "email">Email</option>
+            <option value = "friend">Friend</option>
+            <option value = "teacher">Teacher</option>
+            <option value = "reddit">reddit</option>
+            <option value = "tv">TV commercial</option>
+        </select>
+        <br>
+
         <input type = "submit" id = "submit" text = "Submit">
     </form>
 </body>
