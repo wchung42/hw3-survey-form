@@ -27,7 +27,7 @@ body {
 
 label {
     display: inline-block;
-    padding: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 10px;
     text-align: right;
 }
 
@@ -45,9 +45,21 @@ input[type = text], input[type = number], input[type = email], select, textarea 
     box-sizing: border-box;
 }
 
+input[type = checkbox] {
+    position: relative;
+}
+
 input[type=submit] {
     background-color: rgb(76, 99, 175);
     color: white;
     padding: 12px 20px;
     border-radius: 4px;
   }
+
+.radio {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}

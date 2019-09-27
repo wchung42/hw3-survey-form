@@ -36,12 +36,19 @@
             </div>
             
             <!-- radio -->
-            <label id = "pick">Pick a number: </label><br>
-            <input type = "radio" name = "num" value = "3" checked> 3
-            <input type = "radio" name = "num" value = "7" > 7
-            <input type = "radio" name = "num" value = "13" > 13
-            <input type = "radio" name = "num" value = "42" > 42
-            <input type = "radio" name = "num" value = "infinity" > Infinity<br><br>
+            <div class = "row">
+                <div class = "left-column">
+                    <label id = "pick">Pick a number: </label><br>
+                </div>
+                <div class = "right-column">
+                    <input type = "radio" name = "num" value = "3" checked> 3 
+                    <input type = "radio" name = "num" value = "7" > 7
+                    <input type = "radio" name = "num" value = "13" > 13
+                    <input type = "radio" name = "num" value = "42" > 42
+                    <input type = "radio" name = "num" value = "infinity" > Infinity<br><br>
+                </div>
+            </div>
+            
 
             <label id = "rec">How likely would you recommend this?</label><br>
             <input type = "radio" name = "recommendation" value = "zero" checked> 0
@@ -52,28 +59,47 @@
             <input type = "radio" name = "recommendation" value = "greatest-survey-ever" > Greatest survey ever <br><br>
 
             <!-- dropdown menu -->
-            <label id = "rec-label">How did you hear about this amazing survey?</label><br>
-            <select name = "userRec" id = "dropdown">
-                <option disabled selected value>Select an option</option>
-                <option value = "email">Email</option>
-                <option value = "friend">Friend</option>
-                <option value = "teacher">Teacher</option>
-                <option value = "reddit">reddit</option>
-                <option value = "tv">TV commercial</option>
-            </select>
-            <br><br>
+            <div class = "row">
+                <div class = "left-column">
+                    <label id = "rec-label">How did you hear about this amazing survey?</label><br>
+                </div>
+                <div class = "right-column">
+                <select name = "userRec" id = "dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value = "email">Email</option>
+                    <option value = "friend">Friend</option>
+                    <option value = "teacher">Teacher</option>
+                    <option value = "reddit">reddit</option>
+                    <option value = "tv">TV commercial</option>
+                </select>
+                </div>
+                <br><br>
+            </div>
 
             <!-- checkbox -->
-            <label id = "options">What should I add to the survey?</label><br>
-            <input type = "checkbox" name = "feature1" value = "Pizza"> Pizza delivery service <br>
-            <input type = "checkbox" name = "feature1" value = "Questions"> More random questions <br>
-            <input type = "checkbox" name = "feature1" value = "Quit"> A quit button <br>
-            <input type = "checkbox" name = "feature1" value = "Nothing"> Absolutely nothing because it's perfect <br><br>
-
+            <div class = "row">
+                <div class = "left-column">
+                    <label id = "options">What should I add to the survey?</label><br>
+                </div>
+                <div class = "right-column">
+                    <input type = "checkbox" name = "feature1" value = "Pizza"> Pizza delivery service <br>
+                    <input type = "checkbox" name = "feature1" value = "Questions"> More random questions <br>
+                    <input type = "checkbox" name = "feature1" value = "Quit"> A quit button <br>
+                    <input type = "checkbox" name = "feature1" value = "Nothing"> Absolutely nothing because it's perfect <br><br>
+                </div>
+                <br><br>
+            </div>
+            
             <!-- textarea -->
-            <label id = "feedback">Complaints, thoughts, suggestions?</label><br>
-            <textarea id = "suggestions" style = "height: 75px; resize:vertical;" name = "suggestions" placeholder = "Gives us feedback plz"></textarea><br>
-
+            <div class = "row">
+                <div class = "left-column">
+                    <label id = "feedback">Complaints, thoughts, suggestions?</label><br>
+                </div>
+                <div class = "right-column">
+                    <textarea id = "suggestions" style = "height: 75px; resize:vertical;" name = "suggestions" placeholder = "Gives us feedback plz"></textarea><br>
+                </div>
+            </div>
+            
             <input type = "submit" id = "submit" text = "Submit">
         </form>
     </div>
