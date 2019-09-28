@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px) {
+   input[type="submit"] {
+       width: 100%;
+   }
+}
+
 body {
     background-color: #cfbae9;
     text-align: center;
@@ -66,10 +72,10 @@ input[type = checkbox] {
 }
 
 input[type=submit] {
-    background-color: rgb(76, 99, 175);
+    background-color: rgb(0, 153, 180);
     color: white;
     padding: 12px 20px;
-    border-radius: 4px;
+    border-radius: 10px;
   }
 
 .radio {
@@ -79,3 +85,4 @@ input[type=submit] {
     display: block;
     padding-bottom: 10px;
 }
+
