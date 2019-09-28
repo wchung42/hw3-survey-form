@@ -37,7 +37,15 @@ label {
     clear: both;
 }
 
-input[type = text], input[type = number], input[type = email], select, textarea {
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type = text], input[type = number], input[type = email], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -46,9 +54,15 @@ input[type = text], input[type = number], input[type = email], select, textarea 
 }
 
 input[type = checkbox] {
+    display: inline-block;
     position: relative;
-    display: inline;
-    float: left;
+    vertical-align: middle;
+}
+
+.checkbox-label {
+    position: relative;
+    vertical-align: middle;
+    bottom: 1px;
 }
 
 input[type=submit] {
