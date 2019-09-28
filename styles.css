@@ -47,6 +47,8 @@ input[type = text], input[type = number], input[type = email], select, textarea 
 
 input[type = checkbox] {
     position: relative;
+    display: inline;
+    float: left;
 }
 
 input[type=submit] {
